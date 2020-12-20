@@ -25,3 +25,6 @@ Route::get('locale/{locale}', function ($locale){
 //Category
 Route::any('category_list','Category\CategoryController@index');
 Route::post('/create_category','Category\CategoryController@create');
+//Product
+Route::any('product_list','Product\ProductController@index');
+Route::post('create_product','Product\ProductController@store');

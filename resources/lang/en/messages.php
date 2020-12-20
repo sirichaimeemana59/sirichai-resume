@@ -18,5 +18,16 @@ return [
         'detail'=>'Detail',
         'cat'=>'Category',
         'add_cat'=>'Create Category'
+    ],
+    'product'=>[
+        'product'=>'Product',
+        'name_th' =>'Name TH',
+        'name_en'=>'Name EN',
+        'detail'=>'Detail',
+        'cat'=>'Category',
+        'add_product'=>'Create Product',
+        'img'=>'Photo',
+        'price'=>'Price',
+        'amount'=>'Amount',
     ]
 ];

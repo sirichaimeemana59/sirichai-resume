@@ -49,7 +49,7 @@
             <h4>John's Blog</h4>
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#section1">Home</a></li>
-                <li><a href="{!! url('/product') !!}">Product</a></li>
+                <li><a href="{!! url('/product_list') !!}">{!! trans('messages.product.product') !!}</a></li>
                 <li><a href="{!! url('/category_list') !!}">{!! trans('messages.category.cat') !!}</a></li>
                 <li><a href="#section3">Photos</a></li>
                 <li><a href="{!! url('product/product_list') !!}" ><i class="fa fa-language"></i> TH</a></li>
