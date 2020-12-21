@@ -28,3 +28,7 @@ Route::post('/create_category','Category\CategoryController@create');
 //Product
 Route::any('product_list','Product\ProductController@index');
 Route::post('create_product','Product\ProductController@store');
+Route::post('/product/list-view','Product\ProductController@show');
+
+//API Order
+Route::any('api_order','APIController\OrderController@index');

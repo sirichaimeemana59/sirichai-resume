@@ -6,6 +6,7 @@ return [
     'edit'=>'Edit',
     'del'=>'Delete',
     'action'=>'Action',
+    'view'=>'View',
     'home' => [
         'login' => 'Login',
         'regis' => 'Register',

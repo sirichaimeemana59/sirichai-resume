@@ -55,9 +55,14 @@ class ProductController extends Controller
     }
 
 
-    public function show($id)
+    public function show(Request $request)
     {
-        //
+       // dd($request->input('id'));
+       $product = Product::find($request->input('id'));
+       $product->get();
+
+       return response()->json($product);
+
     }
 
 

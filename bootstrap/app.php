@@ -15,6 +15,8 @@ $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
+//$app->register(Kreait\Laravel\Firebase\ServiceProvider::class);
+//$app->withFacades();
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces

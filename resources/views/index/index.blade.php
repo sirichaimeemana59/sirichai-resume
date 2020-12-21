@@ -13,6 +13,16 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
     <style>
         /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
         .row.content {height: 1500px}
@@ -43,6 +53,7 @@
 <body>
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<input type="hidden" id="root-url" value="{!! url('/') !!}">
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">

@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1d8b6e-fe17-45e0-9c84-711c2579ba88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Product/product_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sirichai-resume.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sirichai-resume.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/th/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/th/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Product/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product/product_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -135,6 +143,23 @@
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/riverline/multipart-parser" />
+      <path value="$PROJECT_DIR$/vendor/rize/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-core" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-storage" />
+      <path value="$PROJECT_DIR$/vendor/google/crc32" />
+      <path value="$PROJECT_DIR$/vendor/kreait/laravel-firebase" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-php" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-tokens" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/giggsey/libphonenumber-for-php" />
+      <path value="$PROJECT_DIR$/vendor/giggsey/locale" />
+      <path value="$PROJECT_DIR$/vendor/kreait/clock" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1luRZOhQsdSdZh9545wVUEtW8Bx" />
@@ -172,7 +197,9 @@
       <updated>1608445046540</updated>
       <workItem from="1608445048311" duration="9011000" />
       <workItem from="1608456557635" duration="87000" />
-      <workItem from="1608457951690" duration="2811000" />
+      <workItem from="1608457951690" duration="3170000" />
+      <workItem from="1608533099842" duration="286000" />
+      <workItem from="1608547789096" duration="8036000" />
     </task>
     <servers />
   </component>
@@ -180,6 +207,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="317" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608559822297">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="317" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1608559822297" />
     <state x="573" y="363" key="Github.ShareDialog" timestamp="1608456586117">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -209,9 +240,10 @@
     </state>
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608449700132" />
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1608458171817" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1608449999063">
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1608559218131">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608449999063" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1608559218131" />
   </component>
 </project>

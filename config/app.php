@@ -163,6 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Kreait\Laravel\Firebase\ServiceProvider::class,
 
 
 
