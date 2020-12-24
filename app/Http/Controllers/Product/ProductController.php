@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product\Product;
 use App\Models\Category\Category;
+use DB;
 
 class ProductController extends Controller
 {
@@ -43,6 +44,8 @@ class ProductController extends Controller
        $product->img = $image;
        $product->save();
 
+        //dd($product);
+
        return redirect('/product_list');
 
 //        if(!is_null($image)) {
@@ -58,8 +61,14 @@ class ProductController extends Controller
     public function show(Request $request)
     {
        // dd($request->input('id'));
-       $product = Product::find($request->input('id'));
-       $product->get();
+//       $product = Product::find($request->input('id'));
+//       $product->get();
+
+        $product = DB::table('product')
+            ->where('product.id','=',$request->input('id'))
+            ->join('category','category.id','=','product.cat_id')
+            ->select('product.*','category.name_th as name_cat_th','category.name_en as name_cat_en')
+            ->get();
 
        return response()->json($product);
 

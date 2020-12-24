@@ -5,6 +5,7 @@
             <h2 class="mb-4">{!! trans('messages.product.product') !!}</h2>
             <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal-addProduct">{!! trans('messages.product.add_product') !!}</button>
             <br><br>
+            <img src="{!! asset('1608459709.png') !!}" alt="" width="500">
             <table class="table table-bordered data-table-cat">
                 <thead>
                 <tr>
@@ -22,7 +23,7 @@
 {{--                        <td><img src="" alt=""></td>--}}
                         <td>
                             <button class="btn btn-primary mt-2 mt-xl-0 text-right view-store" data-id="{!! $row->id !!}">{!! trans('messages.view') !!}</button>
-                            <a href="{!! url('employee/cat/edit/'.$row->id) !!}"><button class="btn btn-warning mt-2 mt-xl-0 text-right">{!! trans('messages.edit') !!}</button></a>
+                            <a href="{!! url('product/list-view/'.$row->id) !!}"><button class="btn btn-warning mt-2 mt-xl-0 text-right">{!! trans('messages.edit') !!}</button></a>
                             <button class="btn btn-danger mt-2 mt-xl-0 text-right delete-store" data-id="{!! $row->id !!}">{!! trans('messages.del') !!}</button>
                         </td>
                     </tr>
@@ -58,7 +59,7 @@
 
                     <div class="form-group">
                         <label for="price">{!! trans('messages.product.price') !!} :</label>
-                        <input type="text" name="nampricee_en" class="form-control" id="price" placeholder="{!! trans('messages.product.price') !!}" required>
+                        <input type="text" name="price" class="form-control" id="price" placeholder="{!! trans('messages.product.price') !!}" required>
                     </div>
 
                     <div class="form-group">
@@ -125,22 +126,18 @@
 
                     <div class="form-group">
                         <label for="price">{!! trans('messages.product.price') !!} :</label>
-                        <input type="text" name="nampricee_en" class="form-control" id="price" placeholder="{!! trans('messages.product.price') !!}" required>
+                        <input type="text" name="price" class="form-control" id="price_PD" placeholder="{!! trans('messages.product.price') !!}" readonly>
                     </div>
 
                     <div class="form-group">
                         <label for="amount">{!! trans('messages.product.amount') !!} :</label>
-                        <input type="text" name="amount" class="form-control" id="amount" placeholder="{!! trans('messages.product.amount') !!}" required>
+                        <input type="text" name="amount" class="form-control" id="amount_PD" placeholder="{!! trans('messages.product.amount') !!}" readonly>
                     </div>
 
+
                     <div class="form-group">
-                        <label for="cat">{!! trans('messages.category.cat') !!} :</label>
-                        <select name="cat" id="" class="form-control">
-                            <option value="">{!! trans('messages.category.cat') !!}</option>
-                            @foreach($cat as $key => $value)
-                                <option value="{!! $value->id !!}">{!! $value->{'name_'.Session::get('locale')} !!}</option>
-                            @endforeach
-                        </select>
+                        <label for="amount">{!! trans('messages.category.cat') !!} :</label>
+                        <input type="text" name="cat_PD" class="form-control" id="cat_PD" placeholder="{!! trans('messages.category.cat') !!}" readonly>
                     </div>
 
                     <div class="form-group">
@@ -148,9 +145,9 @@
                         <input type="file" name="img" class="form-control" id="img" placeholder="{!! trans('messages.product.img') !!}" required>
                     </div>
 
-
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-lg pull-right">{!! trans('messages.add') !!}</button>
+                        <div class="img"></div>
+{{--                        <button type="submit" class="btn btn-success btn-lg pull-right">{!! trans('messages.add') !!}</button>--}}
                         {{--                    <button type="button" class="btn btn-warning btn-lg">Register</button>--}}
                     </div>
                     {!! Form::close() !!}
@@ -190,11 +187,22 @@
                  $.ajax({
                      url:$('#root-url').val()+'/product/list-view',
                      method : 'post',
-                     dataType:'JSON',
+                     dataType:'json',
                      data : ({'id':id}),
                      success:function(e){
-                         document.getElementById("name_th_PD").value = e.name_th;
-                         document.getElementById("name_en_PD").value = e.name_en;
+                        // console.log(e);
+                         $.each(e, function (i,v) {
+                             document.getElementById("name_th_PD").value = v.name_th;
+                             document.getElementById("name_en_PD").value = v.name_en;
+                             document.getElementById("price_PD").value = v.price;
+                             document.getElementById("amount_PD").value = v.amount;
+                             document.getElementById("cat_PD").value = v.name_cat_{!! Session::get('locale') !!};
+
+                             var img = [
+                                 '<img src="asset('+ v.img +')" alt="" width="25%">'
+                             ];
+                             $('.img').append(img);
+                         });
                      },error:function(){
                          console.log('error');
                      }

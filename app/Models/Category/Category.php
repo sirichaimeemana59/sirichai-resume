@@ -14,4 +14,8 @@ class Category extends Model
     protected $table = 'category';
     protected $primaryKey = 'id';
     public $timestamps = true;
+
+    public function join_cat(){
+        return $this->hasOne('app\Models\Category\Category','cat_id','id');
+}
 }
