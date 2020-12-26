@@ -31,5 +31,5 @@ Route::post('create_product','Product\ProductController@store');
 Route::post('/product/list-view','Product\ProductController@show');
 Route::post('/product/edit-data','Product\ProductController@edit');
 Route::post('/update_product','Product\ProductController@update');
-//API Order
-Route::any('api_order','APIController\OrderController@index');
+//API Firebase
+Route::get('/test','FirebaseController@index');

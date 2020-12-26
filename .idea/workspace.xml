@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1d8b6e-fe17-45e0-9c84-711c2579ba88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/firebase/sirichai-resume-firebase-adminsdk-nfh1q-b28e28046c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sirichai-resume.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sirichai-resume.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/th/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/th/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Product/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product/product_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +19,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,22 +140,6 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
       <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
-      <path value="$PROJECT_DIR$/vendor/google/auth" />
-      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
-      <path value="$PROJECT_DIR$/vendor/riverline/multipart-parser" />
-      <path value="$PROJECT_DIR$/vendor/rize/uri-template" />
-      <path value="$PROJECT_DIR$/vendor/google/cloud-core" />
-      <path value="$PROJECT_DIR$/vendor/google/cloud-storage" />
-      <path value="$PROJECT_DIR$/vendor/google/crc32" />
-      <path value="$PROJECT_DIR$/vendor/kreait/laravel-firebase" />
-      <path value="$PROJECT_DIR$/vendor/kreait/firebase-php" />
-      <path value="$PROJECT_DIR$/vendor/kreait/firebase-tokens" />
-      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
-      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
-      <path value="$PROJECT_DIR$/vendor/giggsey/libphonenumber-for-php" />
-      <path value="$PROJECT_DIR$/vendor/giggsey/locale" />
-      <path value="$PROJECT_DIR$/vendor/kreait/clock" />
-      <path value="$PROJECT_DIR$/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1luRZOhQsdSdZh9545wVUEtW8Bx" />
@@ -169,6 +158,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/firebase" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public" />
@@ -195,7 +187,8 @@
       <workItem from="1608547789096" duration="8036000" />
       <workItem from="1608647180612" duration="358000" />
       <workItem from="1608814682554" duration="5911000" />
-      <workItem from="1608947344562" duration="3197000" />
+      <workItem from="1608947344562" duration="6088000" />
+      <workItem from="1608958044112" duration="277000" />
     </task>
     <servers />
   </component>
@@ -211,6 +204,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="162" y="311" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.875@0.25.1440.875" timestamp="1608819859730" />
+    <state x="255" y="379" width="484" height="255" key="ComposerInitDialogKey" timestamp="1608957862121">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="255" y="379" width="484" height="255" key="ComposerInitDialogKey/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608957862121" />
     <state x="573" y="363" key="Github.ShareDialog" timestamp="1608456586117">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -240,10 +237,10 @@
     </state>
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608449700132" />
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1608458171817" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1608948013402">
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1608957747943">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608948013402" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608957747943" />
     <state x="213" y="293" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1608820619165" />
   </component>
 </project>
