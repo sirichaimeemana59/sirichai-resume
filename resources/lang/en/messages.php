@@ -30,5 +30,7 @@ return [
         'img'=>'Photo',
         'price'=>'Price',
         'amount'=>'Amount',
+        'view'=>'Product Detail',
+        'edit'=>'Product Update',
     ]
 ];

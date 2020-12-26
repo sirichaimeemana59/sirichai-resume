@@ -31,10 +31,17 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
+
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < 10; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+
+
         $image = time().'.'.$request->img->extension();
-
-        //$request->img->move(public_path('img'), $image);
-
+        $request->img->move(public_path('img'), $image);
        $product = new Product();
        $product->name_th = $request->input('name_th');
        $product->name_en = $request->input('name_en');
@@ -48,22 +55,11 @@ class ProductController extends Controller
 
        return redirect('/product_list');
 
-//        if(!is_null($image)) {
-//            return back()->with('success','Success! image uploaded');
-//        }
-//
-//        else {
-//            return back()->with("failed", "Alert! image not uploaded");
-//        }
     }
 
 
     public function show(Request $request)
     {
-       // dd($request->input('id'));
-//       $product = Product::find($request->input('id'));
-//       $product->get();
-
         $product = DB::table('product')
             ->where('product.id','=',$request->input('id'))
             ->join('category','category.id','=','product.cat_id')
@@ -75,15 +71,38 @@ class ProductController extends Controller
     }
 
 
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        $product = DB::table('product')
+            ->where('product.id','=',$request->input('id'))
+            ->join('category','category.id','=','product.cat_id')
+            ->select('product.*','category.name_th as name_cat_th','category.name_en as name_cat_en')
+            ->get();
+
+        $cat = new Category();
+        $cat = $cat->get();
+
+        $array['data']['product']=$product;
+        $array['data']['cat']=$cat;
+
+        return response()->json($array);
     }
 
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $image = time().'.'.$request->img->extension();
+        $request->img->move(public_path('img'), $image);
+        $product = Product::find($request->input('id'));
+        $product->name_th = $request->input('name_th');
+        $product->name_en = $request->input('name_en');
+        $product->price = $request->input('price');
+        $product->amount = $request->input('amount');
+        $product->cat_id = $request->input('cat');
+        $product->img = $image;
+        $product->save();
+
+        return redirect('/product_list');
     }
 
 
