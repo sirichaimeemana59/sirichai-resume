@@ -7,6 +7,7 @@ return [
     'del'=>'Delete',
     'action'=>'Action',
     'view'=>'View',
+    'home_'=>'Home',
     'home' => [
         'login' => 'Login',
         'regis' => 'Register',
@@ -32,5 +33,16 @@ return [
         'amount'=>'Amount',
         'view'=>'Product Detail',
         'edit'=>'Product Update',
+    ],
+    'resume' =>[
+        'resume' => 'Resume',
+        'detail_th'=>'Detail TH',
+        'detail_en'=>'Detail EN',
+        'head_th'=>'Head TH',
+        'head_en'=>'Head EN',
+        'add'=>'Add Resume',
+        'file'=>'File',
+        'edit'=>'Edit Resume',
+        'view'=>'View Resume',
     ]
 ];

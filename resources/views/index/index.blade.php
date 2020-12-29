@@ -59,12 +59,12 @@
         <div class="col-sm-3 sidenav">
             <h4>John's Blog</h4>
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#section1">Home</a></li>
+                <li class="active"><a href="#section1">{!! trans('messages.home_') !!}</a></li>
                 <li><a href="{!! url('/product_list') !!}">{!! trans('messages.product.product') !!}</a></li>
                 <li><a href="{!! url('/category_list') !!}">{!! trans('messages.category.cat') !!}</a></li>
-                <li><a href="#section3">Photos</a></li>
-                <li><a href="{!! url('product/product_list') !!}" ><i class="fa fa-language"></i> TH</a></li>
-                <li><a href="{!! url('locale/en') !!}}" ><i class="fa fa-language"></i> EN</a></li>
+                <li><a href="{!! url('/resume_list') !!}">{!! trans('messages.resume.resume') !!}</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('locale/en') }}" >{!! trans('messages.home.en') !!}</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('locale/th') }}" >{!! trans('messages.home.th') !!}</a></li>
             </ul><br>
 
             <div class="input-group">
