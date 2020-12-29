@@ -141,6 +141,11 @@
                         <input type="text" name="cat_PD" class="form-control" id="cat_PD" placeholder="{!! trans('messages.category.cat') !!}" readonly>
                     </div>
 
+                    <div class="form-group">
+                        <label for="amount">{!! trans('messages.product.img') !!} :</label>
+                        <img src="" alt="" id="url_img">
+                    </div>
+
                     {!! Form::close() !!}
 
                 </div>
@@ -205,6 +210,11 @@
                         <button type="submit" class="btn btn-success btn-lg pull-right">{!! trans('messages.add') !!}</button>
                         {{--                    <button type="button" class="btn btn-warning btn-lg">Register</button>--}}
                     </div>
+
+                    <div class="form-group">
+                        <label for="amount">{!! trans('messages.product.img') !!} :</label>
+                        <img src="" alt="" id="url_img_edit">
+                    </div>
                     {!! Form::close() !!}
 
                 </div>
@@ -251,10 +261,8 @@
                              document.getElementById("amount_PD").value = v.amount;
                              document.getElementById("cat_PD").value = v.name_cat_{!! Session::get('locale') !!};
 
-                             var img = [
-                                 '<img src="asset('+ v.img +')" alt="" width="25%">'
-                             ];
-                             $('.img').append(img);
+                             $("#url_img").attr("src","{!! asset('img/') !!}/"+v.img );
+
                          });
                      },error:function(){
                          console.log('error');
@@ -288,6 +296,8 @@
                             document.getElementById("id").value = v.id;
                             document.getElementById("ed_cat").value = v.name_cat_{!! Session::get('locale') !!};
                             cat_id = v.cat_id;
+                            $("#url_img_edit").attr("src","{!! asset('img/') !!}/"+v.img );
+
                         });
 
                         $.each(e.data.cat,function(i,v) {

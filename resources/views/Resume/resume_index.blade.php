@@ -208,11 +208,10 @@
                         </select>
                     </div>
 
-                    <img src="{!! asset('1608955156.png') !!}" alt="">
 
                     <div class="form-group">
                         <label for="name_en">{!! trans('messages.resume.file') !!} :</label>
-
+                        <a href="" id="url_img" target="_blank">{!! trans('messages.resume.file') !!}</a>
                     </div>
 
 
@@ -324,9 +323,9 @@
                             }
                         });
 
-                        file ='<a href="public/img/'+e.data.resume.file+')"></a>';
 
-                        console.log(file);
+                        $("#url_img").attr("href","{!! asset('img/') !!}/"+e.data.resume.file );
+
 
                     },error:function(){
                         console.log('error');
