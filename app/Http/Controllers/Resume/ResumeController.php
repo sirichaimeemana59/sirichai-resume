@@ -68,13 +68,16 @@ class ResumeController extends Controller
 
     public function update(Request $request)
     {
+        $image = time().'.'.$request->img->extension();
+        $request->img->move(public_path('img'), $image);
+
         $resume = resume::find($request->input('id'));
         $resume->head_th = $request->input('head_th');
         $resume->head_en = $request->input('head_en');
         $resume->detail_th = $request->input('detail_th');
         $resume->detail_en = $request->input('detail_en');
         $resume->cat_id = $request->input('cat');
-        $resume->file = 'file';
+        $resume->file = $image;
         $resume->save();
         //dd($resume);
 

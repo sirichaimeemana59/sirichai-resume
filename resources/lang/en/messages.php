@@ -44,5 +44,11 @@ return [
         'file'=>'File',
         'edit'=>'Edit Resume',
         'view'=>'View Resume',
+        'exp'=>'Experience',
+        'add_exp'=>'Add Experience',
+        'edit_exp'=>'Edit Experience',
+        'view_exp'=>'View Experience',
+        'start'=>'Date Start',
+        'end'=>'Date End',
     ]
 ];

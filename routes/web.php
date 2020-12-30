@@ -38,3 +38,6 @@ Route::any('resume_list','Resume\ResumeController@index');
 Route::post('resume_create','Resume\ResumeController@create');
 Route::post('/resume/edit-data','resume\ResumeController@store');
 Route::post('resume_update','Resume\ResumeController@update');
+//experience
+Route::any('exp_list','experience\ExperienceController@index');
+Route::post('exp_create','experience\ExperienceController@create');

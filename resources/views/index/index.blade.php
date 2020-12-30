@@ -12,17 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
+{{--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--}}
     <style>
         /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
         .row.content {height: 1500px}
@@ -62,10 +52,26 @@
                 <li class="active"><a href="#section1">{!! trans('messages.home_') !!}</a></li>
                 <li><a href="{!! url('/product_list') !!}">{!! trans('messages.product.product') !!}</a></li>
                 <li><a href="{!! url('/category_list') !!}">{!! trans('messages.category.cat') !!}</a></li>
-                <li><a href="{!! url('/resume_list') !!}">{!! trans('messages.resume.resume') !!}</a></li>
+
+                <li class="nav nav-pills nav-stacked">
+                    <div class="col-sm-6 sidenav">
+                        <i class="dropdown-toggle" type="" data-toggle="dropdown">
+                            <a href="#">{!! trans('messages.resume.resume') !!}</a>
+{{--                            <span class="caret"></span>--}}
+                        </i>
+                        <ul class="dropdown-content">
+                            <li><a href="{!! url('/resume_list') !!}">{!! trans('messages.resume.resume') !!}</a></li>
+                            <li><a href="{!! url('/exp_list') !!}">{!! trans('messages.resume.exp') !!}</a></li>
+                            <li><a href="{!! url('/resume_list') !!}">{!! trans('messages.resume.resume') !!}</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('locale/en') }}" >{!! trans('messages.home.en') !!}</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('locale/th') }}" >{!! trans('messages.home.th') !!}</a></li>
             </ul><br>
+
 
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search Blog..">
