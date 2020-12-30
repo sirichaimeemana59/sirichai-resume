@@ -14,4 +14,10 @@ class EncryptCookies extends Middleware
     protected $except = [
         //
     ];
+//    protected $addHttpCookie = true;
+//
+//    protected $except = [
+//        'auth/facebook/callback',
+//        'auth/google/callback',
+//    ];
 }

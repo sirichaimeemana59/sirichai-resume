@@ -18,18 +18,20 @@
                 </tr>
                 </thead>
                 <tbody>
-{{--                @foreach($resume as $key => $row)--}}
-{{--                    <tr>--}}
-{{--                        <td>{!! $key+1 !!}</td>--}}
-{{--                        <td>{!! $row->{'head_'.Session::get('locale')}!!}</td>--}}
-{{--                        <td>{!! $row->{'detail_'.Session::get('locale')}!!}</td>--}}
-{{--                        <td>--}}
-{{--                            <button class="btn btn-primary mt-2 mt-xl-0 text-right view-store" data-id="{!! $row->id !!}">{!! trans('messages.view') !!}</button>--}}
-{{--                            <button class="btn btn-warning mt-2 mt-xl-0 text-right edit-store" data-id="{!! $row->id !!}">{!! trans('messages.edit') !!}</button>--}}
-{{--                            <button class="btn btn-danger mt-2 mt-xl-0 text-right delete-store" data-id="{!! $row->id !!}">{!! trans('messages.del') !!}</button>--}}
-{{--                        </td>--}}
-{{--                    </tr>--}}
-{{--                @endforeach--}}
+                @foreach($experience as $key => $row)
+                    <tr>
+                        <td>{!! $key+1 !!}</td>
+                        <td>{!! localDate($row->date_start)!!}</td>
+                        <td>{!! $row->date_end!!}</td>
+                        <td>{!! $row->{'detail_'.Session::get('locale')}!!}</td>
+                        <td>{!! $row->{'detail_'.Session::get('locale')}!!}</td>
+                        <td>
+                            <button class="btn btn-primary mt-2 mt-xl-0 text-right view-store" data-id="{!! $row->id !!}">{!! trans('messages.view') !!}</button>
+                            <button class="btn btn-warning mt-2 mt-xl-0 text-right edit-store" data-id="{!! $row->id !!}">{!! trans('messages.edit') !!}</button>
+                            <button class="btn btn-danger mt-2 mt-xl-0 text-right delete-store" data-id="{!! $row->id !!}">{!! trans('messages.del') !!}</button>
+                        </td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

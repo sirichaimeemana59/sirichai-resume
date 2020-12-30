@@ -11,7 +11,11 @@ class ExperienceController extends Controller
 
     public function index()
     {
-        return view ('Resume.experience.experience_list');
+        $experience = new experience();
+        $experience = $experience->get();
+
+       // return response()->json($experience);
+        return view ('Resume.experience.experience_list')->with(compact('experience'));
     }
 
     public function create(Request $request)

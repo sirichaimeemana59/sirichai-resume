@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1d8b6e-fe17-45e0-9c84-711c2579ba88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Resume/experience/experience_list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/Helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Resume/ResumeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Resume/ResumeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/th/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/th/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/experience/ExperienceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/experience/ExperienceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Resume/experience/experience_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Resume/experience/experience_list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Helpers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -188,7 +186,7 @@
       <workItem from="1608947344562" duration="6088000" />
       <workItem from="1608958044112" duration="277000" />
       <workItem from="1609206553235" duration="10974000" />
-      <workItem from="1609294233701" duration="6097000" />
+      <workItem from="1609294233701" duration="7313000" />
     </task>
     <servers />
   </component>
@@ -237,10 +235,10 @@
     </state>
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1609296439238" />
     <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1609208824231" />
-    <state x="213" y="293" width="670" height="676" key="search.everywhere.popup" timestamp="1609220403523">
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1609301305023">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608957747943" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1609301305023" />
     <state x="213" y="293" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1609220403523" />
   </component>
 </project>
