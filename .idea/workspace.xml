@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1d8b6e-fe17-45e0-9c84-711c2579ba88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/Helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/experience/ExperienceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/experience/ExperienceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Resume/experience/experience_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Resume/experience/experience_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Resume/ResumeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Resume/ResumeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,19 +148,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/database/firebase" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Helpers" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/firebase" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +189,17 @@
       <workItem from="1608947344562" duration="6088000" />
       <workItem from="1608958044112" duration="277000" />
       <workItem from="1609206553235" duration="10974000" />
-      <workItem from="1609294233701" duration="7313000" />
+      <workItem from="1609294233701" duration="7589000" />
+      <workItem from="1612159960510" duration="33000" />
+      <workItem from="1612460378953" duration="12000" />
+      <workItem from="1617357595337" duration="522000" />
+      <workItem from="1618048452937" duration="5233000" />
+      <workItem from="1618110399927" duration="185000" />
+      <workItem from="1618123812318" duration="201000" />
+      <workItem from="1618151125998" duration="229000" />
+      <workItem from="1618192543093" duration="161000" />
+      <workItem from="1618281597841" duration="1981000" />
+      <workItem from="1618316225027" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -194,51 +207,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="317" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608559822297">
+    <state x="190" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618323389976">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="317" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1608559822297" />
-    <state x="162" y="311" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608819859730">
+    <state x="190" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.875@0.25.1440.875" timestamp="1618323389976" />
+    <state x="270" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618323046530">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="162" y="311" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.875@0.25.1440.875" timestamp="1608819859730" />
-    <state x="255" y="379" width="484" height="255" key="ComposerInitDialogKey" timestamp="1608957862121">
+    <state x="270" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1618323046530" />
+    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup" timestamp="1618323964822">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="255" y="379" width="484" height="255" key="ComposerInitDialogKey/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608957862121" />
-    <state x="573" y="363" key="Github.ShareDialog" timestamp="1608456586117">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="573" y="363" key="Github.ShareDialog/0.25.1440.875@0.25.1440.875" timestamp="1608456586117" />
-    <state x="460" y="168" key="Github.UntrackedFilesDialog" timestamp="1608456593098">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="460" y="168" key="Github.UntrackedFilesDialog/0.25.1440.875@0.25.1440.875" timestamp="1608456593098" />
-    <state width="1398" height="228" key="GridCell.Tab.0.bottom" timestamp="1608456340457">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state width="1398" height="228" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608456340457" />
-    <state width="1398" height="228" key="GridCell.Tab.0.center" timestamp="1608456340456">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state width="1398" height="228" key="GridCell.Tab.0.center/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608456340456" />
-    <state width="1398" height="228" key="GridCell.Tab.0.left" timestamp="1608456340455">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state width="1398" height="228" key="GridCell.Tab.0.left/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608456340455" />
-    <state width="1398" height="228" key="GridCell.Tab.0.right" timestamp="1608456340456">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state width="1398" height="228" key="GridCell.Tab.0.right/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1608456340456" />
-    <state x="540" y="390" key="NewPhpFileDialog" timestamp="1609296439238">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1609296439238" />
-    <state x="540" y="390" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1609208824231" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1609301305023">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875/1440.-99.1366.999@0.25.1440.875" timestamp="1609301305023" />
-    <state x="213" y="293" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1609220403523" />
+    <state x="261" y="-827" width="894" height="816" key="search.everywhere.popup/0.25.1440.875/-252.-1055.1920.1055@-252.-1055.1920.1055" timestamp="1617357844326" />
+    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1618323964822" />
   </component>
 </project>

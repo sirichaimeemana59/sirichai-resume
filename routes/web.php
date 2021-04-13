@@ -41,3 +41,15 @@ Route::post('resume_update','Resume\ResumeController@update');
 //experience
 Route::any('exp_list','experience\ExperienceController@index');
 Route::post('exp_create','experience\ExperienceController@create');
+
+
+//Create User Mobile
+Route::get('/token', function () {
+    return csrf_token();
+});
+Route::post('user_create_user','CreateUser\CreateUserControllers@store');
+Route::get('mobile_user_list','CreateUser\CreateUserControllers@index');
+Route::post('mobile_user_login','CreateUser\CreateUserControllers@login');
+//Create pets
+Route::post('user_create_pets','Pets\PetsController@store');
+Route::get('user_lit_pets','Pets\PetsController@index');

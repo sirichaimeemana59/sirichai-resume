@@ -18,8 +18,9 @@ class ResumeController extends Controller
         $resume = new resume();
         $resume = $resume->get();
 
+        return response()->json($resume);
 
-        return view('Resume.resume_index')->with(compact('cat','resume'));
+        //return view('Resume.resume_index')->with(compact('cat','resume'));
     }
 
     public function create(Request $request)
