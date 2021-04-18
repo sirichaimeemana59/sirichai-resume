@@ -17,7 +17,7 @@ class PetsController extends Controller
     public function index()
     {
         $pet = new PetModel();
-        $pet = $pet->get();
+        $pet = $pet->get()->sortBy('create_at');
 
         return response()->json($pet);
     }
@@ -43,7 +43,7 @@ class PetsController extends Controller
         $pet = new PetModel();
         $pet->name = $request->input('name');
         $pet->age = $request->input('age');
-        $pet->photo = $request->input('photo');
+        $pet->photo = 'photo.png';
         $pet->note = $request->input('note');
         $pet->save();
 
@@ -69,7 +69,23 @@ class PetsController extends Controller
      */
     public function edit($id)
     {
-        //
+        //dd($id);
+        $pet = PetModel::find($id);
+        $pet->first();
+
+        //dd(count($pet));
+
+        if(!empty($pet)){
+            $status = 1;
+            $data['status']= $status;
+            $data['data']=$pet;
+        }else{
+            $status = 0;
+            $data['status']= $status;
+        }
+
+
+        return response()->json($data);
     }
 
     /**
@@ -79,9 +95,17 @@ class PetsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+       // dd($request->input('id'));
+        $pet = PetModel::find($request->input('id'));
+        $pet->name = $request->input('name');
+        $pet->age = $request->input('age');
+        $pet->photo = $request->input('photo');
+        $pet->note = $request->input('note');
+        $pet->save();
+
+        return response()->json('success');
     }
 
     /**
@@ -92,6 +116,9 @@ class PetsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $pet = PetModel::find($id);
+        $pet->delete();
+
+        return response()->json('1');
     }
 }

@@ -31,6 +31,7 @@ if($count = count($user) == 0){
 }else{
     $status = 1;
     $data_user['user']= $user;
+    $data_user['user_name']= $user[0]['name'];
     $data_user['status']= $status;
         return response()->json($data_user);
 }

@@ -53,3 +53,6 @@ Route::post('mobile_user_login','CreateUser\CreateUserControllers@login');
 //Create pets
 Route::post('user_create_pets','Pets\PetsController@store');
 Route::get('user_lit_pets','Pets\PetsController@index');
+Route::get('user_get_detail_pets/{id?}','Pets\PetsController@edit');
+Route::get('user_delete_detail_pets/{id?}','Pets\PetsController@destroy');
+Route::any('user_update_pets','Pets\PetsController@update');
