@@ -56,3 +56,6 @@ Route::get('user_lit_pets','Pets\PetsController@index');
 Route::get('user_get_detail_pets/{id?}','Pets\PetsController@edit');
 Route::get('user_delete_detail_pets/{id?}','Pets\PetsController@destroy');
 Route::any('user_update_pets','Pets\PetsController@update');
+//Create Shop
+Route::post('user_create_shop','ShopController\ShopController@store');
+Route::get('user_list_shop','ShopController\ShopController@index');
