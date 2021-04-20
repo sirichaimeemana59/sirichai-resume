@@ -59,3 +59,6 @@ Route::any('user_update_pets','Pets\PetsController@update');
 //Create Shop
 Route::post('user_create_shop','ShopController\ShopController@store');
 Route::get('user_list_shop','ShopController\ShopController@index');
+//Create food
+Route::post('user_create_food_shop','Food\FoodController@store');
+Route::get('user_list_food_shop/{id}','Food\FoodController@index');

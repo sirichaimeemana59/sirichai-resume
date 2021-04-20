@@ -1,34 +1,35 @@
 <?php
 
-namespace App\Http\Controllers\ShopController;
+namespace App\Http\Controllers\Food;
 
 use App\Http\Controllers\Controller;
-use App\Models\Pets\PetModel;
-use Illuminate\Http\Request;
 use App\Models\Shop\ShopModel;
+use Illuminate\Http\Request;
+use App\Models\foodShopModel\foodShopModel;
 
-class ShopController extends Controller
+class FoodController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        $shop = new ShopModel();
-        $shop = $shop->get()->sortBy('create_at');
+        $food = foodShopModel::where('shop_id','=',$id);
+        $food = $food->get()->sortBy('create_at');
 
-        $count =count($shop);
+         $count =count($food);
 
-        if($count != 0){
-            $data['status'] = '1';
-            $data['shop'] = $shop;
-            return response()->json($data);
-        }else{
-            $data['status'] = '0';
-            return response()->json($data);
-        }
+    if($count != 0){
+        $data['status'] = '1';
+        $data['food'] = $food;
+        return response()->json($data);
+    }else{
+        $data['status'] = '0';
+        return response()->json($data);
+    }
+
     }
 
     /**
@@ -49,10 +50,14 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
-        $shop = new ShopModel();
-        $shop->name_th = $request->input('name_th');
-        $shop->name_en = $request->input('name_en');
-        $shop->save();
+        $food = new foodShopModel();
+        $food->name_th = $request->input('name_th');
+        $food->name_en = $request->input('name_en');
+        $food->detail_th = $request->input('detail_th');
+        $food->detail_en = $request->input('detail_en');
+        $food->price = $request->input('price');
+        $food->shop_id = $request->input('shop_id');
+        $food->save();
 
         return response()->json('success');
     }
