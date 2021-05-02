@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc1d8b6e-fe17-45e0-9c84-711c2579ba88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CreateUser/CreateUserControllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CreateUser/CreateUserControllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/1609215777.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,6 +208,17 @@
       <workItem from="1618837540603" duration="246000" />
       <workItem from="1618896790970" duration="819000" />
       <workItem from="1618922197596" duration="2754000" />
+      <workItem from="1619102465439" duration="236000" />
+      <workItem from="1619395069657" duration="241000" />
+      <workItem from="1619429746465" duration="253000" />
+      <workItem from="1619430379772" duration="226000" />
+      <workItem from="1619482553182" duration="261000" />
+      <workItem from="1619496658904" duration="667000" />
+      <workItem from="1619748095252" duration="187000" />
+      <workItem from="1619835295697" duration="855000" />
+      <workItem from="1619844524272" duration="377000" />
+      <workItem from="1619918983664" duration="282000" />
+      <workItem from="1619958468584" duration="3295000" />
     </task>
     <servers />
   </component>
@@ -222,10 +234,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="270" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1618922580337" />
-    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup" timestamp="1618323964822">
+    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup" timestamp="1619959132638">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="261" y="-827" width="894" height="816" key="search.everywhere.popup/0.25.1440.875/-252.-1055.1920.1055@-252.-1055.1920.1055" timestamp="1617357844326" />
-    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1618323964822" />
+    <state x="385" y="214" width="671" height="677" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1619959132638" />
   </component>
 </project>

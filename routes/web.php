@@ -62,3 +62,5 @@ Route::get('user_list_shop','ShopController\ShopController@index');
 //Create food
 Route::post('user_create_food_shop','Food\FoodController@store');
 Route::get('user_list_food_shop/{id}','Food\FoodController@index');
+//Create Order
+Route::post('user_create_order','Order\OrderController@store');
